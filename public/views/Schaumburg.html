@@ -1,0 +1,37 @@
+
+
+<div class="mdl-cell" style="background: white;">
+	<div class="panel-header">Schaumburg Business Report</div>
+	<div class="panel-body forms">
+		<div layout="row" layout-sm="column" layout-xs="column"
+			class="mdl-grid">
+			<div flex="25" flex-xs="100">
+				<md-content layout-padding> <md-input-container>
+				<span class="input-label">Factory</span> <md-select
+					placeholder="factory" ng-model="factory"> <md-option>Subscriber</md-option>
+				<md-option>Infrastructure</md-option> </md-select> </md-input-container> </md-content>
+			</div>
+			<div flex="25" flex-xs="100">
+				<md-content layout-padding> <md-input-container>
+				<span class="input-label">Show Total Lines?</span> <md-select
+					placeholder="Show Total Lines?" ng-model="showTotalLines">
+				<md-option>Yes</md-option> <md-option>No</md-option> </md-select> </md-input-container> </md-content>
+			</div>
+			<div flex="25" flex-xs="100">
+				<md-content layout-padding> <md-input-container>
+				<span class="input-label">Unshippable Orders?</span> <md-select
+					placeholder="Show Total Lines?" ng-model="unshippableOrders">
+				<md-option>Yes</md-option> <md-option>No</md-option> </md-select> </md-input-container> </md-content>
+			</div>
+			<div flex="25" flex-xs="100">
+				<md-content layout-padding> <md-input-container>
+				<span class="input-label">Data Run Time</span> <input type="date"
+					ng-model="date"> </md-input-container> </md-content>
+			</div>
+		</div>
+		
+		<md-button class="md-raised md-primary"> Submit</md-button>
+		 <div id="grid1" ui-grid="getSchaumburgData" ui-grid-pagination class="grid"></div>
+	
+	</div>
+</div>
